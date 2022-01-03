@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Bem-vindo!</h1>
+      <div class="container">
+            <form id="form_id" action="/submit" onsubmit="submitform()" method="post">
+            <h2>Preencha os campos abaixo</h2>
+            <label>Nome :</label>
+            <input type="text" id="name" placeholder="Nome" required/>
+
+            <label>Idade :</label>
+            <input type="text" id="age" placeholder="Idade" required/>
+                
+            <label>Email :</label>
+            <input type="text" id="email" placeholder="E-mail" />
+                
+            <input type="button" id="erase_id" value="Apagar" onclick="erasefields()"/>
+            <button type="submit" class="submit_form">Enviar</button>
+                
+            </form>
+    </div>
+      
+  </main>
+  </body>
+</html>
